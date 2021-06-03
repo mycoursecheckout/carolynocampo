@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Illustrated Projects</title>
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper w-100 float-left">
+<div class="container">
+  <div id="content-head">
+    
+    </div>
+  <section id="menu-content" class="show w-100 float-left">
+      <div id="subMenu">
+        <nav class="sub-menu">
+          <ul>
+            <li><a href="sketchbook.html">Sketchbook</a></li>
+	    <li class="active"><a href="illustrated-projects.html">Illustrated Projects</a></li>
+            <li><a href="for-lyn-devon.html">For Lyn Devon</a></li>
+            <li><a href="as-seen-in.html">As Seen In</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+  <div class="slider_outer w-100 float-left pb-5">
+    <div class="owl-carousel slides">
+      <div class="item"> <img src="images/punch.jpg" alt=""> </div>
+      <div class="item"> <img src="images/punch2.jpg" alt=""> </div>
+      <div class="item"> <img src="images/punch3.jpg" alt=""> </div>
+      <div class="item"> <img src="images/MDLR.jpg" alt=""> </div>
+      <div class="item"> <img src="images/mary.jpg" alt=""> </div>
+      <div class="item"> <img src="images/mary2a.jpg" alt=""> </div>
+      <div class="item"> <img src="images/mary3.jpg" alt=""> </div>
+      <div class="item"> <img src="images/oldschool1.jpg" alt=""> </div>
+      <div class="item"> <img src="images/gypsy.jpg" alt=""> </div>
+      <div class="item"> <img src="images/ansel.jpg" alt=""> </div>
+      <div class="item"> <img src="images/ansel2.jpg" alt=""> </div>
+      <div class="item"> <img src="images/ansel3.jpg" alt=""> </div>
+      <div class="item"> <img src="images/harbour.jpg" alt=""> </div>
+    </div>
+  </div>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script> 
+<script src="js/OwlCarousel2Thumbs.min.js"></script> 
+<script>
+ function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("mobile_nav").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("mobile_nav").style.marginLeft= "0";
+}
+</script> 
+<script>
+    var owl = $('.slides');
+    owl.owlCarousel({
+        loop: true,
+		dots:false,
+        items: 1,
+        thumbs: true,
+        thumbImage: true,
+        thumbContainerClass: 'owl-thumbs',
+        thumbItemClass: 'owl-thumb-item'
+    });
+</script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+	$.ajax({url: "includes/header.inc.html", success: function(result){
+		$("#content-head").html(result);
+	}});  
+});
+</script>
+<script>
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 1){  
+        $('.header').addClass("sticky");
+    }
+    else{
+        $('.header').removeClass("sticky");
+    }
+});
+</script>
+</body>
+</html>

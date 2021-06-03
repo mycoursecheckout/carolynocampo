@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>L RL</title>
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper w-100 float-left">
+  <div class="container">
+    <div id="content-head">
+    
+    </div>
+    <section id="menu-content" class="show w-100 float-left">
+      <div id="subMenu">
+        <nav class="sub-menu">
+          <ul>
+             <li><a href="talbots.html">Talbots</a></li>
+              <li><a href="lauren-ralph-lauren.html">Lauren Ralph Lauren</a></li>
+              <li class="active"><a href="l-rl.html">L RL</a></li>
+              <li><a href="polo-sport.html">Polo Sport</a></li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <div class="slider_outer w-100 float-left pb-5">
+    <div class="owl-carousel slides">
+	<div class="item"> <img src="images/activeproduct2.jpg" alt=""> </div>
+        <div class="item"> <img src="images/activeproduct3.jpg" alt=""> </div>
+        <div class="item"> <img src="images/activeproduct4.jpg" alt=""> </div>
+	<div class="item"> <img src="images/active.jpg" alt=""> </div>
+	<div class="item"> <img src="images/active4.jpg" alt=""> </div>
+	<div class="item"> <img src="images/active1.jpg" alt=""> </div>
+	<div class="item"> <img src="images/active2.jpg" alt=""> </div>
+	<div class="item"> <img src="images/active3.jpg" alt=""> </div>
+	
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script> 
+<script src="js/OwlCarousel2Thumbs.min.js"></script>  
+<script>
+ function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("mobile_nav").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("mobile_nav").style.marginLeft= "0";
+}
+</script> 
+<script>
+    var owl = $('.slides');
+    owl.owlCarousel({
+        loop: true,
+		dots:false,
+        items: 1,
+        thumbs: true,
+        thumbImage: true,
+        thumbContainerClass: 'owl-thumbs',
+        thumbItemClass: 'owl-thumb-item'
+    });
+</script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+	$.ajax({url: "includes/header.inc.html", success: function(result){
+		$("#content-head").html(result);
+	}});  
+});
+</script>
+<script>
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 1){  
+        $('.header').addClass("sticky");
+    }
+    else{
+        $('.header').removeClass("sticky");
+    }
+});
+</script>
+</body>
+</html>
