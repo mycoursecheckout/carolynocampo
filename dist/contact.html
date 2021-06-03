@@ -113,36 +113,11 @@
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script> 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.js"></script> 
-<script>
- function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("mobile_nav").style.marginLeft = "250px";
-}
 
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("mobile_nav").style.marginLeft= "0";
-}
-</script>
-<script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script>
-$(document).ready(function(){
-	$.ajax({url: "includes/header.inc.html", success: function(result){
-		$("#content-head").html(result);
-	}});  
-});
-</script>
-<script>
-$(window).scroll(function() {
-    if ($(this).scrollTop() > 1){  
-        $('.header').addClass("sticky");
-    }
-    else{
-        $('.header').removeClass("sticky");
-    }
-});
-</script>
+<script src="js/footer.js"></script>
+
+
 </body>
 </body>
 </html>

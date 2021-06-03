@@ -17,8 +17,8 @@ a:hover {text-decoration:none;}
 .sticky .nav{ padding:17px 0;}
 
 .main_content{ background-color:#fff; margin-top:190px; padding:75px;}
-#menu-content{margin-top:180px;}
-.logo{ padding:35px 0;}
+#menu-content{margin-top:160px;}
+.logo{ padding:20px 0;}
 .nav{ background-color:#f3f3f3;padding:25px 0;}
 .nav ul, .nav ul li{ width:100%; float:none; display:inline-block; text-align:center;}
 .nav ul li{ width:auto; position:relative;}
@@ -66,7 +66,7 @@ a:hover {text-decoration:none;}
 .owl-thumbs {position: relative;bottom: 0;left: 0;display:table;width:100%; text-align:center; margin-top:30px;}
 .owl-thumb-item {display:table-cell; border:none;background:none;padding: 0;opacity:.4;}
 .owl-thumb-item.active {opacity: 1;}
-
+.owl-carousel .owl-item img {max-width: 70% !important; margin: 0 auto;}
 
 .about_img {margin-bottom:100px;}
 .about_txt { padding:0px 40px;}
